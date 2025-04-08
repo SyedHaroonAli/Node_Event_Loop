@@ -8,14 +8,14 @@ setTimeout(() => {
 }, 0)
 
 Promise.resolve().then(() => {
-  console.log('Promise 1') // 3
+  console.log('Promise 1') // 4
   process.nextTick(() => {
-    console.log('nextTick inside Promise') // 4
+    console.log('nextTick inside Promise') // 5
   })
 })
 
 process.nextTick(() => {
-  console.log('nextTick 1') // 2
+  console.log('nextTick 1') // 3
 })
 
-console.log('End') // 5
+console.log('End') // 2

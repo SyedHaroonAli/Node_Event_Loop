@@ -16,7 +16,7 @@ function nested() {
 }
 
 process.nextTick(() => {
-  console.log('E') // 2
+  console.log('E') // 3
 })
 
-console.log('F') // 3
+console.log('F') // 2
