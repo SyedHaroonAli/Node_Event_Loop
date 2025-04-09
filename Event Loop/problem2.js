@@ -9,11 +9,3 @@ setTimeout(() => {
 }, 2000)
 
 console.log('Ending') // 2
-
-// Result
-/**
- * Starting
- * Ending
- * Timeout 1
- * Timeout 2
- */
